@@ -10,4 +10,11 @@ palettes.forEach((palette, index) => {
     "background-color",
     computedStyles.getPropertyValue(`--${index}`)
   );
+
+  palette.addEventListener("click", () => {
+    display.style.setProperty(
+      "background-color",
+      palette.style.getPropertyValue("background-color")
+    );
+  });
 });
