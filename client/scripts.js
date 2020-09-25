@@ -16,5 +16,7 @@ palettes.forEach((palette, index) => {
       "background-color",
       palette.style.getPropertyValue("background-color")
     );
+
+    palette.classList.add("grayscale");
   });
 });
