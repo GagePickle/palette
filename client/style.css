@@ -1,0 +1,30 @@
+/* Scope variables to only be for direct 'div' children of another 'div.' */
+div > div {
+  --0: #fb0d1c;
+  --1: #2afd2f;
+  --2: #1fb4fb;
+  --3: #fdad2a;
+  --4: #f828fc;
+
+  height: 182px;
+  width: 182px;
+}
+
+main,
+main > div {
+  margin: 0 auto;
+}
+
+main {
+  background-color: #1a1d21;
+  height: 1012px;
+  width: 1160px;
+}
+
+main > div {
+  align-items: flex-end;
+  background: #161616;
+  display: flex;
+  height: 910px;
+  width: 910px;
+}
