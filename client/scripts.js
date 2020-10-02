@@ -14,6 +14,7 @@ const addPaletteColor = (palette, index) => {
   palette.addEventListener("click", () => {
     resetPalette();
 
+    // Set the bg color of the 'main display' to match the 'bg color' of the currently clicked 'palette'
     display.style.setProperty(
       // Which property
       "background-color",
